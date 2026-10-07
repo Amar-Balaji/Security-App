@@ -109,7 +109,7 @@ fun SettingsScreen(vm: VaultViewModel, activity: FragmentActivity) {
                 listOf(0 to "Instantly", 30 to "30 s", 60 to "1 min", 300 to "5 min").forEach { (sec, label) ->
                     FilterChip(
                         selected = vm.autoLock == sec,
-                        onClick = { vm.setAutoLock(sec) },
+                        onClick = { vm.updateAutoLock(sec) },
                         label = { Text(label) }
                     )
                 }

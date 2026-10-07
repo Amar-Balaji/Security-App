@@ -165,7 +165,7 @@ class VaultViewModel(app: Application) : AndroidViewModel(app) {
 
     // ---------- auto-lock ----------
 
-    fun setAutoLock(seconds: Int) {
+    fun updateAutoLock(seconds: Int) {
         prefs.autoLockSeconds = seconds
         autoLock = seconds
     }
